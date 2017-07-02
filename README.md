@@ -1,2 +1,4 @@
-# project-euler-solutions
-My solutions to Project Euler problems
+# Project Euler Solutions
+The repository contains my solutions to [Project Euler](https://projecteuler.net/archives) problems.
+
+`stack install hfmt`
