@@ -1,14 +1,11 @@
 name:                project-euler-solutions
 version:             0.1.0.0
--- synopsis:
--- description:
-homepage:            https://github.com/githubuser/project-euler-solutions#readme
-license:             BSD3
+homepage:            https://github.com/jeremy-miller/project-euler-solutions/blob/master/README.md
+license:             MIT
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
-copyright:           2017 Author name here
-category:            Web
+author:              Jeremy Miller
+copyright:           2017 Jeremy Miller
+category:            Math
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
@@ -38,4 +35,4 @@ test-suite project-euler-solutions-test
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/project-euler-solutions
+  location: https://github.com/jeremy-miller/project-euler-solutions
