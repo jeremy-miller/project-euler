@@ -10,5 +10,5 @@ main = do
   let problemNumber = head args
       solutionSet = Map.fromList [(1, Problem1.solve)]
   case Map.lookup (read problemNumber :: Int) solutionSet of
-    Just result -> return result >>= print
-    Nothing     -> putStrLn $ "No solution exists for problem " ++ problemNumber
+    Just solutionFunction -> return solutionFunction >>= print
+    Nothing               -> putStrLn $ "No solution exists for problem " ++ problemNumber
