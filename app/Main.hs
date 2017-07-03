@@ -1,10 +1,14 @@
 module Main where
 
 import System.Environment (getArgs)
-
-import Lib
+import qualified Data.Map as Map (fromList, lookup)
+import qualified Problem1 (solve)
 
 main :: IO ()
 main = do
   args <- getArgs
-  putStrLn $ head args
+  let problemNumber = head args
+      solutionSet = Map.fromList [(1, Problem1.solve)]
+  case Map.lookup (read problemNumber :: Int) solutionSet of
+    Just result -> return result >>= print
+    Nothing     -> putStrLn $ "No solution exists for problem " ++ problemNumber
