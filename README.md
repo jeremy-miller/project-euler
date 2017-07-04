@@ -15,4 +15,4 @@ Before viewing any solutions, the Docker container must be built: ```docker buil
 
 ### Run
 To view solutions to specific problems, execute the following command (substituting the problem number):
-```docker run -it --rm jeremymiller/project-euler-solutions stack exec project-euler-solutions-exe <problem number>```
+```docker run -it --rm jeremymiller/project-euler-solutions stack exec solutions-exe <problem number>```
