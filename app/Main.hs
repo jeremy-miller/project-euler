@@ -4,6 +4,7 @@ import qualified Data.Map as Map (Map, fromList, lookup)
 import qualified Problem1 (solve)
 import qualified Problem2 (solve)
 import qualified Problem3 (solve)
+import qualified Problem4 (solve)
 import System.Environment (getArgs)
 
 solutionSet :: Map.Map Int Integer
@@ -12,6 +13,7 @@ solutionSet = Map.fromList
     (1, Problem1.solve)
   , (2, Problem2.solve)
   , (3, Problem3.solve)
+  , (4, Problem4.solve)
   ]
 
 main :: IO ()
