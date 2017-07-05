@@ -5,7 +5,7 @@
 The repository contains my solutions to [Project Euler](https://projecteuler.net/archives) problems.
 
 ## Usage
-To see my answers to Project Euler questions, follow the steps below.
+This implementation uses a Docker container to isolate the execution environment.
 
 ### Prerequisites
 - [Docker](https://docs.docker.com/engine/installation/)
