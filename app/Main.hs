@@ -7,6 +7,7 @@ import qualified Problem3 (solve)
 import qualified Problem4 (solve)
 import qualified Problem5 (solve)
 import qualified Problem6 (solve)
+import qualified Problem7 (solve)
 import System.Environment (getArgs)
 
 solutionSet :: Map.Map Int Integer
@@ -18,6 +19,7 @@ solutionSet = Map.fromList
   , (4, Problem4.solve)
   , (5, Problem5.solve)
   , (6, Problem6.solve)
+  , (7, Problem7.solve)
   ]
 
 main :: IO ()
