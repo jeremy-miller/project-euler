@@ -3,4 +3,4 @@ module Problem4
   ) where
 
 solve :: Integer
-solve = maximum [number | y <- [100 .. 999], z <- [y .. 999], let number = y * z, show number == reverse (show number)]
+solve = maximum [number | x <- [100 .. 999], y <- [x .. 999], let number = x * y, show number == reverse (show number)]
