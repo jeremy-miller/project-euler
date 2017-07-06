@@ -23,5 +23,5 @@ main = do
   args <- getArgs
   let problemNumber = head args
   case Map.lookup (read problemNumber :: Int) solutionSet of
-    Just solutionFunction -> return solutionFunction >>= print
+    Just solutionFunction -> print solutionFunction
     Nothing -> putStrLn $ "No solution exists for problem " ++ problemNumber
