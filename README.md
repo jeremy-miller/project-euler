@@ -20,6 +20,10 @@ To run [hlint](https://github.com/ndmitchell/hlint#installing-and-running-hlint)
 To run [hindent](https://github.com/commercialhaskell/hindent) on a file, execute the following command (substituting the source file path):
 ```docker run -it --rm jeremymiller/project-euler-solutions cat <source file path> | hindent```
 
+### Test
+To run the tests (essentially get answers for the solved problems), execute the following command:
+```docker run -it --rm jeremymiller/project-euler-solutions stack test```
+
 ### Run
 To view solutions to specific problems, execute the following command (substituting the problem number):
 ```docker run -it --rm jeremymiller/project-euler-solutions stack exec solutions-exe <problem number>```
