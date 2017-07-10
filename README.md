@@ -2,7 +2,7 @@
 [![GHC Version](https://img.shields.io/badge/GHC-8.0-blue.svg)]()
 
 # Project Euler Solutions
-The repository contains my solutions to [Project Euler](https://projecteuler.net/archives) problems.
+My solutions to [Project Euler](https://projecteuler.net/archives) problems using Haskell.
 
 ## Usage
 This implementation uses a Docker container to isolate the execution environment.
