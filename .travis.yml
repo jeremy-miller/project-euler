@@ -1,5 +1,7 @@
-language: haskell
-# not specifying GHC version since stack will install it
+# don't use "language: haskell" since we're using stack to install GHC
+language: sh
+dist: xenial
+group: edge
 cache:
   directories:
     - $HOME/.stack/
