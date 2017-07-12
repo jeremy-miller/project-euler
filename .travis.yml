@@ -1,6 +1,5 @@
-# don't use "language: haskell" since we're using stack to install GHC
 sudo: required
-language: sh
+language: sh  # don't use "language: haskell" since we're using stack to install GHC
 dist: xenial
 group: edge
 cache:
