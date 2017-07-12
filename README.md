@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jeremy-miller/project-euler.svg?branch=master)](https://travis-ci.org/jeremy-miller/project-euler)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 [![GHC Version](https://img.shields.io/badge/GHC-8.0-blue.svg)]()
 
