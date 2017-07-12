@@ -13,4 +13,7 @@ install:
   - stack --no-terminal --skip-ghc-check setup
   - stack --no-terminal --skip-ghc-check build
 script:
-  - stack --no-terminal --skip-ghc-check test
+  - stack --no-terminal --skip-ghc-check --coverage test
+after_script:
+  - travis_retry curl -L https://github.com/rubik/stack-hpc-coveralls/releases/download/v0.0.4.0/shc-linux-x64-8.0.1.tar.bz2 | tar -xj -C ~/.local/bin
+  - ./shc project-euler solutions-test
