@@ -30,3 +30,6 @@ To run the tests (essentially get answers for the solved problems), execute the 
 ### Run
 To view solutions to specific problems, execute the following command (substituting the problem number):
 ```docker run -it --rm jeremymiller/project-euler stack exec solutions-exe <problem number>```
+
+## License
+[MIT](https://github.com/jeremy-miller/project-euler/blob/master/LICENSE)
