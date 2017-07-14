@@ -1,5 +1,4 @@
 .stack-work/
-.git/
 .codeclimate.yml
 .gitignore
 .travis.yml
