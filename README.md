@@ -7,6 +7,7 @@
 # Project Euler Solutions
 My solutions to [Project Euler](https://projecteuler.net/archives) problems using Haskell.
 
+- [Motivation](#motivation)
 - [Usage](#usage)
   - [Prerequisites](#prerequisites)
   - [Build](#build)
@@ -15,6 +16,11 @@ My solutions to [Project Euler](https://projecteuler.net/archives) problems usin
   - [Run](#run)
   - [Example Run](#example-run)
 - [License](#license)
+
+## Motivation
+I created this project for two reasons:
+1. Learn Haskell
+2. Try solving Project Euler problems. 
 
 ## Usage
 This implementation uses a Docker container to isolate the execution environment.
