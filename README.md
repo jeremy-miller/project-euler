@@ -7,13 +7,22 @@
 # Project Euler Solutions
 My solutions to [Project Euler](https://projecteuler.net/archives) problems using Haskell.
 
+- [Usage](#usage)
+  - [Prerequisites](#prerequisites)
+  - [Build](#build)
+  - [Static Code Analysis](#static-code-analysis)
+  - [Test](#test)
+  - [Run](#run)
+  - [Example Run](#example-run)
+- [License](#license)
+
 ## Usage
 This implementation uses a Docker container to isolate the execution environment.
 
 ### Prerequisites
 - [Docker](https://docs.docker.com/engine/installation/)
 
-### Setup
+### Build
 Before viewing any solutions, the Docker container must be built: ```docker build -t jeremymiller/project-euler .```
 
 ### Static Code Analysis
