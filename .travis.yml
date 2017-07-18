@@ -17,5 +17,6 @@ after_success:
   - stack --no-terminal --skip-ghc-check setup
   - stack --no-terminal --skip-ghc-check build
   - stack --no-terminal --skip-ghc-check --coverage test
-  - travis_retry curl -L https://github.com/rubik/stack-hpc-coveralls/releases/download/v0.0.4.0/shc-linux-x64-8.0.1.tar.bz2 | tar -xj -C ~/.local/bin
+  - travis_retry curl -L https://github.com/rubik/stack-hpc-coveralls/releases/download/v0.0.4.0/shc-linux-x64-8.0.1.tar.bz2 | tar -xj -C $HOME/.local/bin
+  - chmod +x $HOME/.local/bin/shc
   - ./shc project-euler solutions-test  # doesn't work inside docker
