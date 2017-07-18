@@ -11,7 +11,9 @@ before_install:
 script:
   - docker run -it --rm jeremymiller/project-euler stack test --no-terminal --skip-ghc-check
 after_success:
-  - travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C /usr/local/bin '*/stack'
+  - mkdir -p $HOME/.local/bin
+  - export PATH=$HOME/.local/bin:$PATH
+  - travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C $HOME/.local/bin '*/stack'
   - stack --no-terminal --skip-ghc-check setup
   - stack --no-terminal --skip-ghc-check build
   - stack --no-terminal --skip-ghc-check --coverage test
