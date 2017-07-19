@@ -35,6 +35,14 @@ executable solutions-exe
 test-suite solutions-test		
   type:                exitcode-stdio-1.0		
   hs-source-dirs:      test
+  other-modules:       Problem1Spec
+                     , Problem2Spec
+                     , Problem3Spec
+                     , Problem4Spec
+                     , Problem5Spec
+                     , Problem6Spec
+                     , Problem7Spec
+                     , Problem8Spec
   main-is:             Spec.hs		
   build-depends:       base
                      , hspec
