@@ -9,7 +9,7 @@ before_install:
   - travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack'
 install:
   - stack setup --no-terminal --skip-ghc-check
-  - stack build --no-terminal --skip-ghc-check --coverage
+  - stack build --no-terminal --skip-ghc-check --coverage  # --coverage used to make sure code coverage is generated, see https://github.com/commercialhaskell/stack/issues/1305
 script:
   - stack test --no-terminal --skip-ghc-check --coverage
 after_success:
