@@ -11,10 +11,10 @@ before_install:
   - export PATH=$HOME/.local/bin:$PATH
   - travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C ~/.local/bin '*/stack'
 install:
-  - stack --no-terminal --skip-ghc-check setup
-  - stack --no-terminal --skip-ghc-check build
+  - stack setup --no-terminal --skip-ghc-check
+  - stack build --no-terminal --skip-ghc-check
 script:
-  - - stack --no-terminal --skip-ghc-check --coverage test
+  - stack test --no-terminal --skip-ghc-check --coverage
 after_success:
   - travis_retry curl -L https://github.com/rubik/stack-hpc-coveralls/releases/download/v0.0.4.0/shc-linux-x64-8.0.1.tar.bz2 | tar -xj -C ~/.local/bin
   - ./shc project-euler solutions-test  # doesn't work inside docker
