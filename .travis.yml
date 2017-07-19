@@ -1,8 +1,5 @@
-sudo: required
 language: sh  # don't use "language: haskell" since we're using stack to install GHC
 dist: trusty
-services:
-  - docker
 cache:
   directories:		
     - $HOME/.stack/
