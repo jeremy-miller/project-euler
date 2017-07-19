@@ -11,12 +11,10 @@ before_install:
 script:
   - docker run -it --rm jeremymiller/project-euler stack test --no-terminal --skip-ghc-check
 after_success:
-  - mkdir -p $HOME/.local/bin
-  - export PATH=$HOME/.local/bin:$PATH
-  - travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C $HOME/.local/bin '*/stack'
+  - echo $PATH
+  - travis_retry curl -L https://www.stackage.org/stack/linux-x86_64 | tar xz --wildcards --strip-components=1 -C /usr/local/bin '*/stack'
   - stack --no-terminal --skip-ghc-check setup
   - stack --no-terminal --skip-ghc-check build
   - stack --no-terminal --skip-ghc-check --coverage test
-  - travis_retry curl -L https://github.com/rubik/stack-hpc-coveralls/releases/download/v0.0.4.0/shc-linux-x64-8.0.1.tar.bz2 | tar -xj -C $HOME/.local/bin
-  - chmod +x $HOME/.local/bin/shc
-  - ./shc project-euler solutions-test  # doesn't work inside docker
+  - travis_retry curl -L https://github.com/rubik/stack-hpc-coveralls/releases/download/v0.0.4.0/shc-linux-x64-8.0.1.tar.bz2 | tar -xj -C /usr/local/bin
+  - /usr/local/bin/shc project-euler solutions-test  # doesn't work inside docker
