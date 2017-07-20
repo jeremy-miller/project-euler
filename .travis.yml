@@ -15,4 +15,5 @@ script:
 after_success:
   - travis_retry curl -L https://github.com/rubik/stack-hpc-coveralls/releases/download/v0.0.4.0/shc-linux-x64-8.0.1.tar.bz2 | tar -xj -C ~/.local/bin
   - chmod +x ~/.local/bin/shc
+  - ~/.local/bin/shc project-euler doctest  # doesn't work inside docker
   - ~/.local/bin/shc project-euler solutions-test  # doesn't work inside docker
