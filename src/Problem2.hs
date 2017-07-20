@@ -10,5 +10,11 @@ module Problem2
 fibonacci :: [Integer]
 fibonacci = 1 : 2 : zipWith (+) fibonacci (tail fibonacci)
 
+-- | By considering the terms in the Fibonacci sequence whose values do not exceed four million,
+--   find the sum of the even-valued terms.
+--
+-- Example:
+-- >>> solve
+-- 4613732
 solve :: Integer
 solve = sum [x | x <- takeWhile (<= 4000000) fibonacci, even x]
