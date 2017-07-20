@@ -10,5 +10,10 @@ sieveOfEratosthenes processedList primesList
     currentPrime = head processedList
     filteredList = filter (\x -> x `mod` currentPrime /= 0) processedList
 
+-- | What is the 10,001st prime number?
+--
+-- Example:
+-- >>> solve
+-- 104743
 solve :: Integer
 solve = sieveOfEratosthenes [3,5 ..] [2]
