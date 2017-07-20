@@ -4,6 +4,7 @@ module Problem1
 
 -- | Find the sum of all the multiples of 3 or 5 below 1000.
 --
+-- Example:
 -- >>> solve
 -- 233168
 solve :: Integer
