@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/jeremy-miller/project-euler.svg?branch=master)](https://travis-ci.org/jeremy-miller/project-euler)
 [![Coverage Status](https://coveralls.io/repos/github/jeremy-miller/project-euler/badge.svg?branch=master)](https://coveralls.io/github/jeremy-miller/project-euler?branch=master)
 [![Code Climate](https://codeclimate.com/github/jeremy-miller/project-euler/badges/gpa.svg)](https://codeclimate.com/github/jeremy-miller/project-euler)
-[![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
+[![MIT Licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jeremy-miller/project-euler/blob/master/LICENSE)
 [![GHC Version](https://img.shields.io/badge/GHC-8.0-blue.svg)]()
 
 # Project Euler Solutions
