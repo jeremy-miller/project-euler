@@ -14,7 +14,7 @@ My solutions to [Project Euler](https://projecteuler.net/archives) problems usin
   - [Static Code Analysis](#static-code-analysis)
   - [Test](#test)
   - [Run](#run)
-  - [Example Run](#example-run)
+  - [Example Call](#example-call)
 - [License](#license)
 
 ## Motivation
@@ -46,7 +46,7 @@ To run the tests (essentially get answers for the solved problems), execute the 
 To view solutions to specific problems, execute the following command (substituting the problem number):
 ```docker run -it --rm jeremymiller/project-euler stack exec solutions-exe <problem number>```
 
-### Example Run
+### Example Call
 ```
 $ docker run -it --rm jeremymiller/project-euler stack exec solutions-exe 1
 233168
