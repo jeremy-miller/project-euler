@@ -23,8 +23,8 @@ My solutions to [Project Euler](https://projecteuler.net/archives) problems usin
 
 ## Motivation
 I created this project for two reasons:
-- Try Haskell
-- Try solving Project Euler problems
+1. Try Haskell
+2. Try solving Project Euler problems
 
 ## Usage
 This implementation uses a Docker container to isolate the execution environment.
