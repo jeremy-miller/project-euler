@@ -7,15 +7,19 @@
 # Project Euler Solutions
 My solutions to [Project Euler](https://projecteuler.net/archives) problems using Haskell.
 
-- [Motivation](#motivation)
-- [Usage](#usage)
-  - [Prerequisites](#prerequisites)
-  - [Build](#build)
-  - [Static Code Analysis](#static-code-analysis)
-  - [Test](#test)
-  - [Run](#run)
-  - [Example Call](#example-call)
-- [License](#license)
+<details>
+<summary><strong>Table of Contents</strong></summary>
+
+* [Motivation](#motivation)
+* [Usage](#usage)
+  + [Prerequisites](#prerequisites)
+  + [Build](#build)
+  + [Static Code Analysis](#static-code-analysis)
+  + [Test](#test)
+  + [Run](#run)
+  + [Example Call](#example-call)
+* [License](#license)
+</details>
 
 ## Motivation
 I created this project for two reasons:
