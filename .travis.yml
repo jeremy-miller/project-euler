@@ -10,6 +10,7 @@ before_install:
 install:
   - stack setup --no-terminal --skip-ghc-check
   - stack build --no-terminal --skip-ghc-check --coverage  # --coverage used to make sure code coverage is generated, see https://github.com/commercialhaskell/stack/issues/1305
+  - stack install hlint hindent
 script:
   - hlint .
   - travis_wait stack test --no-terminal --skip-ghc-check --coverage
